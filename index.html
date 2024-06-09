@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Bookmark landing page master by Pleasant Chukwuderah">
+    <title>Bookmark landing page master</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Whisper&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li class="close" onclick=closeSidebar()><a href="#"><img src="./Images/icon-close.png"
+                            alt="icon-close"></a>
+                </li>
+                <div class="line"></div>
+                <li><a href="#features" class="nav-link">FEATURES</a></li>
+                <div class="line"></div>
+                <li><a href="#" class="nav-link">PRICING</a></li>
+                <div class="line"></div>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                <div class="line"></div>
+                <li class="login"><a href="#" class="nav-link">LOGIN</a></li>
+                <li><a href="#"><img src="./Images/icon-facebook.png" alt="icon-facebook" class="icon">
+                        <img src="./Images/icon-twitter.png" alt="icon-twitter"></a></li>
+                <!-- <li class="icon"><a href="#"><img src="./Images/icon-twitter.png" alt="icon-twitter"></a></li> -->
+            </ul>
+            <ul class="nav-menu">
+                <li><a href="#header"><img src="./Images/logo-bookmark.png" alt="bookmark logo" class="bookmark"></a>
+                </li>
+                <li class="hideOnMobile"><a href="#features" class="nav-link">FEATURES</a></li>
+                <li class="hideOnMobile"><a href="#" class="nav-link">PRICING</a></li>
+                <li class="hideOnMobile"><a href="#contact" class="nav-link">CONTACT</a></li>
+                <li class="login hideOnMobile"><a href="#" class="nav-link">LOGIN</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="./Images/icon-hamburger.png"
+                            alt="icon-hamburger"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="one">
+        <div class="container">
+            <div class="txt">
+                <h2>A simple Bookmark Manager</h2>
+                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your
+                    sites load instantly. Try it for free.</p>
+                <button type="button" class="blue">Get it on Chrome</button>
+                <button type="button">Get it on Firefox</button>
+            </div>
+            <div class="image">
+                <img src="./Images/illustration-hero.png" alt="illustration-hero">
+            </div>
+        </div>
+        <div class="bg"></div>
+    </section>
+
+    <div class="features" id="features">
+        <h2>Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between
+            your devices so you can access them on the go.</p>
+    </div>
+
+    <section id="two">
+        <ul>
+            <div class="line"></div>
+            <li class="slide" onclick="currentSlide(1)">Simple Bookmarking</li>
+            <div class="line"></div>
+            <li class="slide" onclick="currentSlide(2)">Speedy Searching</li>
+            <div class="line"></div>
+            <li class="slide" onclick="currentSlide(3)">Easy Sharing</li>
+            <div class="line"></div>
+        </ul>
+        <hr>
+
+        <div class="slide-container">
+            <div class="myslide fade">
+                <img src="./Images/illustration-features-tab-1.png" alt="illustration-features-tab-1">
+                <div class="mytxt">
+                    <h2>Bookmark in one click</h2>
+                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                        control over how you manage your favourite sites.</p>
+                    <button type="button">More Info</button>
+                </div>
+            </div>
+
+            <div class="myslide fade">
+                <img src="./Images/illustration-features-tab-2.png" alt="illustration-features-tab-2">
+                <div class="mytxt">
+                    <h2>Intelligent Search</h2>
+                    <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl
+                        through all of your bookmarks.</p>
+                    <button type="button">More Info</button>
+                </div>
+            </div>
+
+            <div class="myslide fade">
+                <img src="./Images/illustration-features-tab-3.png" alt="illustration-features-tab-3">
+                <div class="mytxt">
+                    <h2>Share your bookmarks</h2>
+                    <p>Easily share your bookmarks and collections with others. Create a shareable link that you can
+                        send at the click of a button.</p>
+                    <button type="button">More Info</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg2"></div>
+    </section>
+
+    <div class="features ext">
+        <h2>Download the extension</h2>
+        <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to
+            prioritize.</p>
+    </div>
+
+    <section id="three">
+        <div class="extension-container">
+            <img src="./Images/logo-chrome.png" alt="logo-chrome" class="F-image">
+            <div class="text">
+                <h2>Add to Chrome</h2>
+                <p>Minimum version 62</p>
+            </div>
+            <img src="./Images/bg-dots.png" alt="bg-dots" class="S-image">
+            <div>
+                <button type="button">Add & Install Extension</button>
+            </div>
+        </div>
+
+        <div class="extension-container two">
+            <img src="./Images/logo-firefox.png" alt="logo-firefox" class="F-image">
+            <div class="text">
+                <h2>Add to Firefox</h2>
+                <p>Minimum version 55</p>
+            </div>
+            <img src="./Images/bg-dots.png" alt="bg-dots" class="S-image">
+            <div>
+                <button type="button">Add & Install Extension</button>
+            </div>
+        </div>
+
+        <div class="extension-container three">
+            <img src="./Images/logo-opera.png" alt="logo-opera" class="F-image">
+            <div class="text">
+                <h2>Add to Opera</h2>
+                <p>Minimum version 46</p>
+            </div>
+            <img src="./Images/bg-dots.png" alt="bg-dots" class="S-image">
+            <div>
+                <button type="button">Add & Install Extension</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="FAQs">
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+        </p>
+    </div>
+
+    <section id="four">
+        <hr>
+        <div class="container">
+            <div class="head">
+                <h4>What is Bookmark?</h4>
+                <div>
+                    <p class="dropdown-text hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce tincidunt justo eget ultricies
+                        fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/icon-arrow.png" alt="icon-arrow" class="arrow">
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="head">
+                <h4>How can I request a new browser?</h4>
+                <div>
+                    <p class="dropdown-text hidden">Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                        massa, ultricies
+                        non
+                        ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                        massa,
+                        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                        Mauris
+                        augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/icon-arrow.png" alt="icon-arrow" class="arrow">
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="head">
+                <h4>Is there a mobile app?</h4>
+                <div>
+                    <p class="dropdown-text hidden">Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+                        vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis
+                        sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/icon-arrow.png" alt="icon-arrow" class="arrow">
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="head">
+                <h4>What about other Chromium browsers?</h4>
+                <div>
+                    <p class="dropdown-text hidden">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+                        mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/icon-arrow.png" alt="icon-arrow" class="arrow">
+            </div>
+        </div>
+        <hr>
+        <button type="button">More Info</button>
+    </section>
+
+    <section id="five">
+        <p id="contact">35,000+ ALREADY JOINED</p>
+        <h2>Stay up-to-date with what we're doing</h2>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Enter your email address">
+            <button type="button">Contact Us</button>
+        </div>
+    </section>
+
+    <section id="six">
+        <div class="words">
+            <a href="#header"><img src="./Images/logo-bookmark.png" alt="logo-bookmark" id="header"></a>
+            <ul>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="imgs">
+            <img src="./Images/icon-facebook.png" alt="icon-facebook" class="facebook">
+            <img src="./Images/icon-twitter.png" alt="icon-twitter">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
