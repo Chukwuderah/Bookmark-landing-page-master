@@ -734,7 +734,7 @@ section#six {
     align-items: center;
     background-color: hsl(229, 31%, 21%);
     color: #fff;
-    padding: 30px;
+    padding: 40px;
     width: 100%;
     height: 70px;
 }
@@ -771,9 +771,10 @@ section#six div.imgs img:hover {
 }
 
 section#six div.imgs img {
+    margin-right: 20px;
     cursor: pointer;
 }
 
 section#six div.imgs img.facebook {
-    margin-right: 45px;
+    margin-right: 25px;
 }
