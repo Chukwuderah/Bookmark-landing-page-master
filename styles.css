@@ -313,6 +313,8 @@ section#one div.bg {
     position: absolute;
     top: 70px;
     right: 0;
+    width: 400px;
+    height: 350px;
     max-width: 400px;
     max-height: 350px;
     background-color: hsl(231, 69%, 60%);
@@ -442,8 +444,10 @@ section#two div.bg2 {
     position: absolute;
     top: 150px;
     left: 0;
+    width: 500px;
+    height: 330px;
     max-width: 550px;
-    max-height: 310px;
+    max-height: 370px;
     background-color: hsl(231, 69%, 60%);
     border-radius: 0 50% 50% 0;
     z-index: -1;
