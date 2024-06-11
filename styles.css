@@ -61,7 +61,7 @@ header ul li.login a:hover {
     transition: 0.2s ease-in-out;
 }
 
-.sidebar {
+ul.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -77,13 +77,13 @@ header ul li.login a:hover {
     justify-content: flex-start;
 }
 
-.sidebar li,
-.sidebar a {
+ul.sidebar li,
+ul.sidebar a {
     width: 100%;
     text-align: center;
 }
 
-.menu-button {
+li.menu-button {
     display: none;
 }
 
@@ -110,7 +110,7 @@ div.icon {
         display: none;
     }
 
-    .menu-button {
+    li.menu-button {
         display: block;
     }
 
@@ -777,10 +777,3 @@ section#six div.imgs img {
 section#six div.imgs img.facebook {
     margin-right: 45px;
 }
-
-/* @media only screen and (max-width: 600px) {
-    section#one {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-} */
