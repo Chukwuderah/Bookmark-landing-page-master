@@ -30,6 +30,22 @@ header ul {
     gap: 30px;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    padding: 10px 30px;
+}
+
+.navbar.scrolled {
+    background-color: #fff !important;
+    padding: 5px 30px 25px;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
 /* 
 nav ul li:first-child {
     margin-right: auto;
@@ -110,7 +126,7 @@ div.icon {
 
 @media(max-width:800px) {
     header {
-        padding: 45px 10px;
+        padding: 45px 20px;
     }
 
     .hideOnMobile {
@@ -152,12 +168,18 @@ div.icon {
         margin-right: 30px;
     }
 
-    nav ul li:first-child {
+    /* 
+    div.img .close {
         height: 50px;
         position: relative;
-        top: 70px;
-        margin-bottom: 50px;
+        top: 30px;
+        bottom: 80px;
+        margin-bottom: 80px;
         left: 100px;
+    } */
+
+    div.img span img.icon {
+        display: none;
     }
 
     section#one div.container {
@@ -207,7 +229,7 @@ div.icon {
     }
 
     .sidebar .login {
-        margin-bottom: 70px;
+        margin-bottom: 30px;
     }
 
     .sidebar .login a {
@@ -216,6 +238,19 @@ div.icon {
         padding: 7px;
         min-width: 370px;
         margin: 0 auto;
+    }
+
+    div.img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        width: 75%;
+    }
+
+    div.img span img.icon {
+        filter: invert(1) brightness(2);
     }
 
     /* nav ul li:first-child {
@@ -347,13 +382,17 @@ div.icon {
         row-gap: 15px;
     }
 
+    section#five div button,
     section#five div input {
-        width: 280px;
+        width: 300px;
+        height: 55px;
+        font-size: 15px;
     }
 
-    section#five div button {
-        width: 285px;
+    section#five div input {
+        transform: translateX(8px);
     }
+
 
     footer {
         height: 350px;
@@ -827,15 +866,13 @@ section#five div button:hover {
 
 /* FOOTER */
 footer {
-    /* display: flex;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
     background-color: hsl(229, 31%, 21%);
     color: #fff;
-    padding: 40px;
+    padding: 30px 40px;
     width: 100%;
-    min-height: 50px;
 }
 
 footer div.words,

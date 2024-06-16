@@ -20,6 +20,24 @@ function closeSidebar() {
     });
 }
 
+// scroll effect
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar');
+
+    if (!navbar) {
+        console.error('No element with the class "navbar" found.');
+        return;
+    }
+
+    document.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+});
+
 // Slide show
 let slideIndex = 1;
 showSlides(slideIndex);
