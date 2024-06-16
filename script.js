@@ -1,11 +1,23 @@
 function showSidebar() {
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+
+    // Add event listeners to list items
+    const listItems = sidebar.querySelectorAll('li');
+    listItems.forEach(item => {
+        item.addEventListener('click', closeSidebar);
+    });
 }
 
 function closeSidebar() {
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+
+    // Remove event listeners from list items
+    const listItems = sidebar.querySelectorAll('li');
+    listItems.forEach(item => {
+        item.removeEventListener('click', closeSidebar);
+    });
 }
 
 // Slide show
