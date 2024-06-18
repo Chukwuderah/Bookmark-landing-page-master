@@ -327,11 +327,12 @@ div.icon {
 
     section#one div.image img {
         width: 400px;
+        margin-top: 30px;
     }
 
     section#one div.bg {
-        min-width: 450px;
-        min-height: 220px;
+        width: 350px;
+        height: 200px;
     }
 
     div.features {
@@ -382,7 +383,7 @@ div.icon {
     }
 
     section#two div.slide-container div img {
-        width: 430px;
+        width: 400px;
         height: 270px;
     }
 
@@ -511,10 +512,8 @@ section#one div.bg {
     position: absolute;
     top: 70px;
     right: 0;
-    width: 400px;
-    height: 350px;
-    max-width: 400px;
-    max-height: 350px;
+    min-width: 30vw;
+    min-height: 280px;
     background-color: hsl(231, 69%, 60%);
     border-radius: 50% 0 0 50%;
     z-index: -1;
@@ -582,7 +581,7 @@ section#one div.txt button.blue:hover {
 }
 
 section#one div.image img {
-    max-width: 600px;
+    max-width: 520px;
 }
 
 div.features {
@@ -645,10 +644,8 @@ section#two div.bg2 {
     position: absolute;
     top: 150px;
     left: 0;
-    width: 500px;
-    height: 330px;
-    max-width: 550px;
-    max-height: 370px;
+    min-width: 400px;
+    min-height: 300px;
     background-color: hsl(231, 69%, 60%);
     border-radius: 0 50% 50% 0;
     z-index: -1;
@@ -663,7 +660,7 @@ section#two div.myslide {
 }
 
 section#two img {
-    width: 500px;
+    width: 450px;
     transform: translateX(30px);
 }
 
