@@ -274,12 +274,11 @@ section#two div.myslide {
 
 section#two img {
     width: 450px;
-    transform: translateX(30px);
+    transform: translate(30px, 55px);
 }
 
 section#two div.mytxt {
     width: 450px;
-    text-align: center;
     margin: 0 auto;
     transform: translateY(55px);
 }
@@ -991,6 +990,7 @@ div.end p a:hover {
     section#three div.extension-container {
         width: 70%;
         max-width: 100%;
+        min-height: 420px;
         margin: 0 auto;
     }
 
