@@ -604,6 +604,14 @@ div.end p {
     font-size: 0.7em;
 }
 
+div.end p a {
+    text-decoration: none;
+}
+
+div.end p a:hover {
+    text-decoration: underline;
+}
+
 /* media query */
 @media (max-width: 1100px) and (min-width: 800px) {
     section#two {
